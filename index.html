@@ -1,1 +1,83 @@
-hello world.
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <title>linker-blog</title>
+        <link rel="stylesheet" href="stylesheets/styles.css">
+        <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="javascripts/main.js"></script>
+        <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    </head>
+    <body>
+
+        <header>
+        <h1>Linker-blog</h1>
+        <p>A links dating sites for geeks</p>
+        </header>
+
+        <div id="banner">
+            <span id="logo"></span>
+
+            <a href="https://github.com/jack-zh/link-pub" class="button fork"><strong>View On GitHub</strong></a>
+            <div class="downloads">
+                <span>Downloads:</span>
+                <ul>
+                    <li><a href="https://github.com/jack-zh/link-pub/zipball/master" class="button">ZIP</a></li>
+                    <li><a href="https://github.com/jack-zh/link-pub/tarball/master" class="button">TAR</a></li>
+                </ul>
+            </div>
+        </div><!-- end banner -->
+
+        <div class="wrapper">
+            <nav>
+            <ul></ul>
+            </nav>
+            <section>
+            <h1>Link-pub</h1>
+
+            <p>link-pub是一个练习GO语言的实验性项目，目的是做一个提供给极客的网站，让大家在上面轻易的找到自己想要的资源，有趣的事情。
+            暂时用revel web项目开发。做平易的页面，做牛逼的内容，做方便的交流平台。<a href="https://github.com/jack-zh/link-pub">https://github.com/jack-zh/link-pub</a></p>
+
+            <p>link-pub 是一个公开的项目，托管在github上面，大家都可以参与，关于以后的发展，还是要看项目的成熟程度，现在只是一个练习的阶段
+            <a href="https://github.com/jack-zh/link-pub">https://github.com/jack-zh/link-pub</a></p>
+
+            <h1>Installation</h1>
+
+            <p>To install:</p>
+
+<pre><code># 依赖包的安装，以及依赖问题
+### 安装revel
+    go get github.com/robfig/revel
+#### 生成revel可执行文件
+    go build -o $GOBIN/revel github.com/robfig/revel/cmd
+### 安装mongodb的driver Mgo 先安装依赖bzr
+    install bzr
+    go get labix.org/v2/mgo
+### 项目生成和运行
+    revel new link-pub
+</code></pre>
+
+            <h1>Quick Start</h1>
+
+            <p>启动项目，在8888端口:</p>
+
+
+<pre><code>revel run link-pub
+</code></pre>
+
+</section>
+</div>
+<footer>
+<p>Project maintained by <a href="https://github.com/jack-zh">jack.zh</a></p>
+</footer>
+</div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
+</body>
+</html>
