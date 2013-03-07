@@ -1,0 +1,388 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CFLAGS	Makefile	/^CFLAGS  = -g$/;"	m
+CLASSENTRY_DIP_MASK	include/cli_def.h	37;"	d
+CLASSENTRY_DPORT_MASK	include/cli_def.h	39;"	d
+CLASSENTRY_ETHERTYPE_MASK	include/cli_def.h	41;"	d
+CLASSENTRY_IPVERSION_MASK	include/cli_def.h	34;"	d
+CLASSENTRY_PORTS_MASK	include/cli_def.h	40;"	d
+CLASSENTRY_PROTOCOL_MASK	include/cli_def.h	35;"	d
+CLASSENTRY_SIP_MASK	include/cli_def.h	36;"	d
+CLASSENTRY_SPORT_MASK	include/cli_def.h	38;"	d
+CLASSENTRY_STAGE2_MASK	include/cli_def.h	42;"	d
+CLI_CX4_MAP	include/cli.h	17;"	d
+CLI_CX4_MAP	include/cli_def.h	46;"	d
+CLI_GE_PORT	include/cli.h	15;"	d
+CLI_GE_PROT	include/cli_def.h	44;"	d
+CLI_XGE_PORT	include/cli.h	16;"	d
+CLI_XGE_PORT	include/cli_def.h	45;"	d
+CMD_L	include/cli_def.h	11;"	d
+CSS	include/cli_def.h	26;"	d
+DOIT	include/cli_def.h	15;"	d
+IN_MAP	readline.c	/^static int IN_MAP = 0;$/;"	v	file:
+IP	include/cli_def.h	29;"	d
+IPMASK	include/cli_def.h	30;"	d
+IPV6	include/cli_def.h	28;"	d
+IS_END	readline.c	/^static int IS_END = 1;$/;"	v	file:
+IS_ENTER	readline.c	/^static int IS_ENTER = 0;$/;"	v	file:
+IS_R	readline.c	/^static int IS_R = 0;$/;"	v	file:
+IS_VAL	readline.c	/^static int IS_VAL = 0;$/;"	v	file:
+IVAL	include/cli_def.h	23;"	d
+IVAL1	include/cli_def.h	24;"	d
+IVAL2	include/cli_def.h	25;"	d
+JSON_DIR	include/cli_def.h	18;"	d
+LDFLAGS	Makefile	/^LDFLAGS = -g$/;"	m
+LINE_MAX_TOKEN	include/cli_def.h	12;"	d
+MAC	include/cli_def.h	27;"	d
+MAKE_RULEID	re2val.c	10;"	d	file:
+MAP	readline.c	18;"	d	file:
+MAP_IS_END	readline.c	/^static int MAP_IS_END = 1;$/;"	v	file:
+MAXLEN	re2val.c	9;"	d	file:
+MAX_MODULE_NUMBER	include/cli.h	11;"	d
+MAX_PORT_NUMBER	include/cli.h	12;"	d
+MAX_UD_ID	include/cli_def.h	8;"	d
+NAME	readline.c	/^static char NAME[CMD_L];$/;"	v	file:
+ONE_COM_MAX_LEN	include/cli_def.h	13;"	d
+ORDER	readline.c	17;"	d	file:
+PROMPT	include/cli.h	8;"	d
+PROMPT	include/cli_def.h	4;"	d
+PROMPT2	include/cli.h	9;"	d
+PROMPT2	include/cli_def.h	5;"	d
+REG_STR_LEN	include/cli_def.h	17;"	d
+ReplaceStr	re2val.c	/^int ReplaceStr(char *sSrc, char *sMatchStr, char *sReplaceStr)$/;"	f
+SPTR	include/cli_def.h	21;"	d
+Scanner	include/cli_def.h	/^typedef struct Scanner$/;"	s
+Scanner	include/cli_def.h	/^}Scanner;$/;"	t	typeref:struct:Scanner
+TAB_TOKEN_LEN	include/cli_def.h	16;"	d
+TAB_V	include/cli_def.h	14;"	d
+VPTR	include/cli_def.h	22;"	d
+_CLI_H_	include/cli.h	2;"	d
+__print_scanner	re2val.c	/^void  __print_scanner(Scanner sc)$/;"	f
+addkey	script/write_json.py	/^def addkey(token):$/;"	f
+allcmd	script/write_json.py	/^  allcmd = []$/;"	v
+alldata	script/write_json.py	/^  alldata = {} $/;"	v
+allhelp	script/write_json.py	/^  allhelp = []$/;"	v
+allmodule	script/write_json.py	/^  allmodule = {}$/;"	v
+back_help_res	readline.c	/^static void back_help_res(char **line_list,int len)$/;"	f	file:
+back_r	script/write_json.py	/^            back_r = backonecomjsons(listline)$/;"	v
+back_r	script/write_json.py	/^            back_r = {} $/;"	v
+back_yaml_str	script/write_cli_rpc.c.py	/^def back_yaml_str(filename):$/;"	f
+back_yaml_str	script/write_json.py	/^def back_yaml_str(filename):$/;"	f
+back_yaml_str	script/write_rpc.h.py	/^def back_yaml_str(filename):$/;"	f
+backhelpcomlist	script/write_json.py	/^def backhelpcomlist(listline):$/;"	f
+backmapjson	script/write_json.py	/^def backmapjson(listline):$/;"	f
+backnode	script/write_json.py	/^def backnode(val):$/;"	f
+backnodes	script/write_json.py	/^def backnodes(val):$/;"	f
+backonecom	script/write_json.py	/^def backonecom(line,a,flag):$/;"	f
+backonecomjsons	script/write_json.py	/^def backonecomjsons(listline):$/;"	f
+backonecoms	script/write_json.py	/^def  backonecoms(line):$/;"	f
+backothertoken	script/write_json.py	/^def backothertoken(val):$/;"	f
+base_dir	script/write_web.py	/^base_dir = os.path.abspath(os.path.dirname(sys.argv[0]))$/;"	v
+bighelp	script/write_json.py	/^                bighelp = {}$/;"	v
+bighelp	script/write_json.py	/^            bighelp = {}$/;"	v
+bighelps	script/write_json.py	/^      bighelps = [] $/;"	v
+bigmapjson	readline.c	/^cJSON *bigmapjson;$/;"	v
+bin	re2val.c	/^void bin(int x)$/;"	f
+bnffp	script/write_json.py	/^  bnffp = open("file\/json","w")$/;"	v
+bnffp	script/write_web.py	/^bnffp = open("\/root\/all-json-cli\/json-web\/script\/json.json","w")$/;"	v
+bnffp	script/write_web.py	/^bnffp = open("\/root\/all-json-cli\/json-web\/script\/key.js","w")$/;"	v
+bytes	include/cli.h	/^	char bytes[32][8];$/;"	m	struct:css
+cJSON	include/cJSON.h	/^typedef struct cJSON {$/;"	s
+cJSON	include/cJSON.h	/^} cJSON;$/;"	t	typeref:struct:cJSON
+cJSON_AddFalseToObject	include/cJSON.h	119;"	d
+cJSON_AddItemReferenceToArray	cJSON.c	/^void	cJSON_AddItemReferenceToArray(cJSON *array, cJSON *item)						{cJSON_AddItemToArray(array,create_reference(item));}$/;"	f
+cJSON_AddItemReferenceToObject	cJSON.c	/^void	cJSON_AddItemReferenceToObject(cJSON *object,const char *string,cJSON *item)	{cJSON_AddItemToObject(object,string,create_reference(item));}$/;"	f
+cJSON_AddItemToArray	cJSON.c	/^void   cJSON_AddItemToArray(cJSON *array, cJSON *item)						{cJSON *c=array->child;if (!item) return; if (!c) {array->child=item;} else {while (c && c->next) c=c->next; suffix_object(c,item);}}$/;"	f
+cJSON_AddItemToObject	cJSON.c	/^void   cJSON_AddItemToObject(cJSON *object,const char *string,cJSON *item)	{if (!item) return; if (item->string) cJSON_free(item->string);item->string=cJSON_strdup(string);cJSON_AddItemToArray(object,item);}$/;"	f
+cJSON_AddNullToObject	include/cJSON.h	117;"	d
+cJSON_AddNumberToObject	include/cJSON.h	120;"	d
+cJSON_AddStringToObject	include/cJSON.h	121;"	d
+cJSON_AddTrueToObject	include/cJSON.h	118;"	d
+cJSON_Array	include/cJSON.h	37;"	d
+cJSON_CreateArray	cJSON.c	/^cJSON *cJSON_CreateArray()						{cJSON *item=cJSON_New_Item();if(item)item->type=cJSON_Array;return item;}$/;"	f
+cJSON_CreateBool	cJSON.c	/^cJSON *cJSON_CreateBool(int b)					{cJSON *item=cJSON_New_Item();if(item)item->type=b?cJSON_True:cJSON_False;return item;}$/;"	f
+cJSON_CreateDoubleArray	cJSON.c	/^cJSON *cJSON_CreateDoubleArray(double *numbers,int count)		{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	f
+cJSON_CreateFalse	cJSON.c	/^cJSON *cJSON_CreateFalse()						{cJSON *item=cJSON_New_Item();if(item)item->type=cJSON_False;return item;}$/;"	f
+cJSON_CreateFloatArray	cJSON.c	/^cJSON *cJSON_CreateFloatArray(float *numbers,int count)			{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	f
+cJSON_CreateIntArray	cJSON.c	/^cJSON *cJSON_CreateIntArray(int *numbers,int count)				{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	f
+cJSON_CreateNull	cJSON.c	/^cJSON *cJSON_CreateNull()						{cJSON *item=cJSON_New_Item();if(item)item->type=cJSON_NULL;return item;}$/;"	f
+cJSON_CreateNumber	cJSON.c	/^cJSON *cJSON_CreateNumber(double num)			{cJSON *item=cJSON_New_Item();if(item){item->type=cJSON_Number;item->valuedouble=num;item->valueint=(int)num;}return item;}$/;"	f
+cJSON_CreateObject	cJSON.c	/^cJSON *cJSON_CreateObject()						{cJSON *item=cJSON_New_Item();if(item)item->type=cJSON_Object;return item;}$/;"	f
+cJSON_CreateString	cJSON.c	/^cJSON *cJSON_CreateString(const char *string)	{cJSON *item=cJSON_New_Item();if(item){item->type=cJSON_String;item->valuestring=cJSON_strdup(string);}return item;}$/;"	f
+cJSON_CreateStringArray	cJSON.c	/^cJSON *cJSON_CreateStringArray(const char **strings,int count)	{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateString(strings[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	f
+cJSON_CreateTrue	cJSON.c	/^cJSON *cJSON_CreateTrue()						{cJSON *item=cJSON_New_Item();if(item)item->type=cJSON_True;return item;}$/;"	f
+cJSON_Delete	cJSON.c	/^void cJSON_Delete(cJSON *c)$/;"	f
+cJSON_DeleteItemFromArray	cJSON.c	/^void   cJSON_DeleteItemFromArray(cJSON *array,int which)			{cJSON_Delete(cJSON_DetachItemFromArray(array,which));}$/;"	f
+cJSON_DeleteItemFromObject	cJSON.c	/^void   cJSON_DeleteItemFromObject(cJSON *object,const char *string) {cJSON_Delete(cJSON_DetachItemFromObject(object,string));}$/;"	f
+cJSON_DetachItemFromArray	cJSON.c	/^cJSON *cJSON_DetachItemFromArray(cJSON *array,int which)			{cJSON *c=array->child;while (c && which>0) c=c->next,which--;if (!c) return 0;$/;"	f
+cJSON_DetachItemFromObject	cJSON.c	/^cJSON *cJSON_DetachItemFromObject(cJSON *object,const char *string) {int i=0;cJSON *c=object->child;while (c && cJSON_strcasecmp(c->string,string)) i++,c=c->next;if (c) return cJSON_DetachItemFromArray(object,i);return 0;}$/;"	f
+cJSON_False	include/cJSON.h	32;"	d
+cJSON_GetArrayItem	cJSON.c	/^cJSON *cJSON_GetArrayItem(cJSON *array,int item)				{cJSON *c=array->child;  while (c && item>0) item--,c=c->next; return c;}$/;"	f
+cJSON_GetArraySize	cJSON.c	/^int    cJSON_GetArraySize(cJSON *array)							{cJSON *c=array->child;int i=0;while(c)i++,c=c->next;return i;}$/;"	f
+cJSON_GetErrorPtr	cJSON.c	/^const char *cJSON_GetErrorPtr() {return ep;}$/;"	f
+cJSON_GetObjectItem	cJSON.c	/^cJSON *cJSON_GetObjectItem(cJSON *object,const char *string)	{cJSON *c=object->child; while (c && cJSON_strcasecmp(c->string,string)) c=c->next; return c;}$/;"	f
+cJSON_Hooks	include/cJSON.h	/^typedef struct cJSON_Hooks {$/;"	s
+cJSON_Hooks	include/cJSON.h	/^} cJSON_Hooks;$/;"	t	typeref:struct:cJSON_Hooks
+cJSON_InitHooks	cJSON.c	/^void cJSON_InitHooks(cJSON_Hooks* hooks)$/;"	f
+cJSON_IsReference	include/cJSON.h	40;"	d
+cJSON_NULL	include/cJSON.h	34;"	d
+cJSON_New_Item	cJSON.c	/^static cJSON *cJSON_New_Item()$/;"	f	file:
+cJSON_Number	include/cJSON.h	35;"	d
+cJSON_Object	include/cJSON.h	38;"	d
+cJSON_Parse	cJSON.c	/^cJSON *cJSON_Parse(const char *value)$/;"	f
+cJSON_Print	cJSON.c	/^char *cJSON_Print(cJSON *item)				{return print_value(item,0,1);}$/;"	f
+cJSON_PrintUnformatted	cJSON.c	/^char *cJSON_PrintUnformatted(cJSON *item)	{return print_value(item,0,0);}$/;"	f
+cJSON_ReplaceItemInArray	cJSON.c	/^void   cJSON_ReplaceItemInArray(cJSON *array,int which,cJSON *newitem)		{cJSON *c=array->child;while (c && which>0) c=c->next,which--;if (!c) return;$/;"	f
+cJSON_ReplaceItemInObject	cJSON.c	/^void   cJSON_ReplaceItemInObject(cJSON *object,const char *string,cJSON *newitem){int i=0;cJSON *c=object->child;while(c && cJSON_strcasecmp(c->string,string))i++,c=c->next;if(c){newitem->string=cJSON_strdup(string);cJSON_ReplaceItemInArray(object,i,newitem);}}$/;"	f
+cJSON_String	include/cJSON.h	36;"	d
+cJSON_True	include/cJSON.h	33;"	d
+cJSON__h	include/cJSON.h	24;"	d
+cJSON_free	cJSON.c	/^static void (*cJSON_free)(void *ptr) = free;$/;"	v	file:
+cJSON_malloc	cJSON.c	/^static void *(*cJSON_malloc)(size_t sz) = malloc;$/;"	v	file:
+cJSON_strcasecmp	cJSON.c	/^static int cJSON_strcasecmp(const char *s1,const char *s2)$/;"	f	file:
+cJSON_strdup	cJSON.c	/^static char* cJSON_strdup(const char* str)$/;"	f	file:
+check_json	readline.c	/^static int check_json(char *token ,int level,cJSON *fmt)$/;"	f	file:
+check_line	readline.c	/^static int 	check_line(char **list,int len,cJSON *onejson){$/;"	f	file:
+check_tokenlist	readline.c	/^static int check_tokenlist(char *string)$/;"	f	file:
+check_while	readline.c	/^static int check_while(cJSON *cjson,char *token,int level){$/;"	f	file:
+child	include/cJSON.h	/^	struct cJSON *child;		\/* An array or object item will have a child pointer pointing to a chain of the items in the array\/object. *\/$/;"	m	struct:cJSON	typeref:struct:cJSON::cJSON
+classentry_t	include/cli_def.h	/^struct classentry_t {$/;"	s
+command_generator	readline.c	/^char *command_generator (text, state)$/;"	f
+command_generator_help	readline.c	/^char *command_generator_help (text, state)$/;"	f
+configFile	script/write_web.py	/^configFile = "%s\/%s" % (base_dir,"..\/file\/json")$/;"	v
+console	main.c	/^int console = 0;$/;"	v
+copy	script/write_cli_rpc.c.py	/^import copy $/;"	i
+copy	script/write_json.py	/^import copy $/;"	i
+copy	script/write_rpc.h.py	/^import copy $/;"	i
+create_reference	cJSON.c	/^static cJSON *create_reference(cJSON *item) {cJSON *ref=cJSON_New_Item();if (!ref) return 0;memcpy(ref,item,sizeof(cJSON));ref->string=0;ref->type|=cJSON_IsReference;ref->next=ref->prev=0;return ref;}$/;"	f	file:
+css	include/cli.h	/^struct css$/;"	s
+css	include/cli_def.h	/^		unsigned char css[32][8];     $/;"	m	struct:Scanner
+data	include/cli_def.h	/^    unsigned int data;$/;"	m	struct:ud_t
+data	script/write_cli_rpc.c.py	/^data = yaml.load(yaml_str)$/;"	v
+data	script/write_json.py	/^  data = yaml.load(yaml_str)$/;"	v
+data	script/write_rpc.h.py	/^data = yaml.load(yaml_str)$/;"	v
+data	script/write_web.py	/^data = json.load(stream)$/;"	v
+dataall	script/write_web.py	/^dataall = data['all']$/;"	v
+datahelp	script/write_web.py	/^datahelp = dataall['help']$/;"	v
+datas	include/cli_def.h	/^cJSON *datas;$/;"	v
+datas	script/write_json.py	/^  datas =  json.dumps(filejson)$/;"	v
+dc	readline.c	/^static char *dc;$/;"	v	file:
+dci	readline.c	/^static int s_num,dci;$/;"	v	file:
+die	main.c	/^static void die (const char *format, ...)$/;"	f	file:
+dip	include/cli_def.h	/^    unsigned int dip;$/;"	m	struct:classentry_t
+dip_mask	include/cli_def.h	/^    unsigned int dip_mask;$/;"	m	struct:classentry_t
+dispatcher	dispatcher.c	/^int dispatcher(cJSON *dsp,int funnum)$/;"	f
+do_scan	re2val.c	8;"	d	file:
+dofile	check.c	/^static void dofile(char *filename)$/;"	f	file:
+doit	check.c	/^static void doit(const char *text)$/;"	f	file:
+doit	readline.c	/^static int doit(char *s)$/;"	f	file:
+done	readline.c	/^int done;$/;"	v
+dport_mask	include/cli_def.h	/^    unsigned short dport_mask;$/;"	m	struct:classentry_t
+dupstr	readline.c	/^char *dupstr (s)$/;"	f
+ep	cJSON.c	/^static const char *ep;$/;"	v	file:
+errprint	include/cli.h	6;"	d
+errprint	include/cli_def.h	3;"	d
+ethertype	include/cli_def.h	/^    unsigned short ethertype;$/;"	m	struct:classentry_t
+filejson	script/write_json.py	/^  filejson = {}$/;"	v
+fileman_completion	readline.c	/^char **fileman_completion (text, start, end)$/;"	f
+fill_char	re2val.c	/^static void fill_char(char *chs)$/;"	f	file:
+fill_copylist	re2val.c	/^static fill_copylist(char *chs)$/;"	f	file:
+fill_css	re2val.c	/^static void fill_css(char *chs)$/;"	f	file:
+fill_ethertype_reg	re2val.c	/^static void fill_ethertype_reg(char *chs)$/;"	f	file:
+fill_hash_mode	re2val.c	/^static void fill_hash_mode(char *chs)$/;"	f	file:
+fill_hexdigit	re2val.c	/^static void fill_hexdigit(char *chs)$/;"	f	file:
+fill_ident	re2val.c	/^static void fill_ident(char *chs)$/;"	f	file:
+fill_integer	re2val.c	/^static void fill_integer(char *chs)$/;"	f	file:
+fill_interfaceclass_reg	re2val.c	/^static void fill_interfaceclass_reg(char *chs)$/;"	f	file:
+fill_interfaces	re2val.c	/^static void fill_interfaces(char *chs)$/;"	f	file:
+fill_inthex	re2val.c	/^static void fill_inthex(char *chs)$/;"	f	file:
+fill_ipaddr	re2val.c	/^static void fill_ipaddr(char *chs)$/;"	f	file:
+fill_ipmask_reg	re2val.c	/^static void fill_ipmask_reg(char *chs)$/;"	f	file:
+fill_ipversion_reg	re2val.c	/^static void fill_ipversion_reg(char *chs)$/;"	f	file:
+fill_port_reg	re2val.c	/^static void fill_port_reg( char *chs)$/;"	f	file:
+fill_protocolreg	re2val.c	/^static void fill_protocolreg(char *chs)$/;"	f	file:
+fill_res	script/write_json.py	/^def fill_res():$/;"	f
+fill_ruleid	re2val.c	/^static void fill_ruleid(char *chs)$/;"	f	file:
+fill_rulenum_reg	re2val.c	/^static void fill_rulenum_reg(char *chs)$/;"	f	file:
+fill_sizereg	re2val.c	/^static void fill_sizereg(char *chs)$/;"	f	file:
+fill_slot_port	re2val.c	/^static void fill_slot_port(char *portstr,int flag)$/;"	f	file:
+fill_smp	re2val.c	/^static void fill_smp(char *chs)$/;"	f	file:
+fill_stageclass_reg	re2val.c	/^static void fill_stageclass_reg(char *chs)$/;"	f	file:
+fill_string	re2val.c	/^static void fill_string(char *chs)$/;"	f	file:
+fill_tcpflag_reg	re2val.c	/^static void fill_tcpflag_reg(char *chs)$/;"	f	file:
+fill_udreg	re2val.c	/^static void fill_udreg(char *chs)$/;"	f	file:
+firstByteMark	cJSON.c	/^static const unsigned char firstByteMark[7] = { 0x00, 0x00, 0xC0, 0xE0, 0xF0, 0xF8, 0xFC };$/;"	v	file:
+for_cli_rpc	re2val.c	/^Scanner for_cli_rpc(char *reg_str, char *val_str)$/;"	f
+free_fn	include/cJSON.h	/^      void (*free_fn)(void *ptr);$/;"	m	struct:cJSON_Hooks
+free_readline	readline.c	/^void free_readline()$/;"	f
+funnamelist	script/write_cli_rpc.c.py	/^funnamelist = []$/;"	v
+funnamelist	script/write_rpc.h.py	/^    funnamelist = []$/;"	v
+funnum	script/write_json.py	/^  funnum = 0$/;"	v
+funnum	script/write_json.py	/^funnum = 0$/;"	v
+funstr	script/write_cli_rpc.c.py	/^funstr = ''$/;"	v
+get_console	main.c	/^int get_console(void)$/;"	f
+get_json	readline.c	/^static int get_json(char *modulename)$/;"	f	file:
+get_val	re2val.c	/^Scanner get_val(char *key,cJSON *dsp)$/;"	f
+hd_alarm	main.c	/^void hd_alarm()$/;"	f
+headstr	readline.c	/^static char headstr[25] = "CLI: ";$/;"	v	file:
+help	include/cli_def.h	/^cJSON *help;$/;"	v
+helps	script/write_json.py	/^helps = {}$/;"	v
+i	script/write_cli_rpc.c.py	/^                i = i+1$/;"	v
+i	script/write_cli_rpc.c.py	/^i = 0$/;"	v
+i	script/write_rpc.h.py	/^i = 0$/;"	v
+if_name	include/cli_def.h	/^    char if_name[256];$/;"	m	struct:classentry_t
+ignore	main.c	/^int ignore = 0;$/;"	v
+index	include/cli_def.h	/^    unsigned int index;$/;"	m	struct:classentry_t
+init_main	readline.c	/^static void init_main(char *filename)$/;"	f	file:
+initialize_readline	readline.c	/^initialize_readline ()$/;"	f
+inports	include/cli_def.h	/^    int inports;$/;"	m	struct:classentry_t
+interfaces_start_stop	re2val.c	/^int interfaces_start_stop(int start, int stop)$/;"	f
+ipfragment	include/cli_def.h	/^    int ipfragment;$/;"	m	struct:classentry_t
+ipv6	include/cli_def.h	/^		unsigned int ipv6[8];$/;"	m	struct:Scanner
+ipversion	include/cli_def.h	/^    int ipversion;    $/;"	m	struct:classentry_t
+is_end	script/write_json.py	/^def is_end(listline):$/;"	f
+ival	include/cli_def.h	/^		unsigned long ival;$/;"	m	struct:Scanner
+ival1	include/cli_def.h	/^		unsigned long ival1;$/;"	m	struct:Scanner
+ival2	include/cli_def.h	/^		unsigned long ival2;$/;"	m	struct:Scanner
+json	include/cli_def.h	/^cJSON *json;$/;"	v
+json	script/write_cli_rpc.c.py	/^import json$/;"	i
+json	script/write_json.py	/^import json$/;"	i
+json	script/write_rpc.h.py	/^import json$/;"	i
+json	script/write_web.py	/^import json $/;"	i
+jsons	script/write_json.py	/^      jsons = {} $/;"	v
+jsons	script/write_json.py	/^      jsons = {}$/;"	v
+key	script/write_json.py	/^      key = {}$/;"	v
+key_mask	include/cli_def.h	/^    unsigned int key_mask;$/;"	m	struct:classentry_t
+keylistjson	script/write_web.py	/^keylistjson =  json.dumps(keywords,indent=4)$/;"	v
+keywords	script/write_web.py	/^keywords = ['set','undo','delete','show','unset','get','import','restore','export','exit','reset','save','clear','create','destroy','add','check','enable','download']$/;"	v
+keywords	script/write_web.py	/^keywords = list(set(keywords))$/;"	v
+line	script/write_json.py	/^            line = pa['cmd'].strip()$/;"	v
+list_fun	readline.c	/^static void list_fun()$/;"	f	file:
+list_next_fun	readline.c	/^int list_next_fun(int start,int end) $/;"	f
+listline	script/write_json.py	/^            listline = backonecoms(line)$/;"	v
+lists	script/write_json.py	/^            lists = []$/;"	v
+mac	include/cli_def.h	/^		unsigned int mac[6];     $/;"	m	struct:Scanner
+main	check.c	/^int main (int argc, const char ** argv) {$/;"	f
+main	main.c	/^int main(int argc, char *argv[])$/;"	f
+mak	script/write_json.py	/^mak = {}$/;"	v
+malloc_fn	include/cJSON.h	/^      void *(*malloc_fn)(size_t sz);$/;"	m	struct:cJSON_Hooks
+mapjson	readline.c	/^cJSON *mapjson;$/;"	v
+mapjsonlist	include/cli_def.h	/^cJSON *mapjsonlist;$/;"	v
+mapname	script/write_json.py	/^mapname = 'mapname'$/;"	v
+mapnum	script/write_json.py	/^mapnum = 0$/;"	v
+maptrees	script/write_json.py	/^maptrees ={'mapname1':None} $/;"	v
+mask	include/cli_def.h	/^		unsigned int mask;$/;"	m	struct:Scanner
+mask	include/cli_def.h	/^    unsigned int mask;$/;"	m	struct:ud_t
+max_back_token_num	readline.c	/^static int max_back_token_num;$/;"	v	file:
+max_dport	include/cli_def.h	/^    unsigned short max_dport;$/;"	m	struct:classentry_t
+max_size	include/cli_def.h	/^    int max_size;$/;"	m	struct:classentry_t
+max_sport	include/cli_def.h	/^    unsigned short max_sport;$/;"	m	struct:classentry_t
+min_dport	include/cli_def.h	/^    unsigned short min_dport;$/;"	m	struct:classentry_t
+min_size	include/cli_def.h	/^    int min_size;$/;"	m	struct:classentry_t
+min_sport	include/cli_def.h	/^    unsigned short min_sport;$/;"	m	struct:classentry_t
+module	include/cli_def.h	/^cJSON *module;$/;"	v
+module	script/write_json.py	/^  module=[]$/;"	v
+name	readline.c	/^static char name[CMD_L];$/;"	v	file:
+next	include/cJSON.h	/^	struct cJSON *next,*prev;	\/* next\/prev allow you to walk array\/object chains. Alternatively, use GetArraySize\/GetArrayItem\/GetObjectItem *\/$/;"	m	struct:cJSON	typeref:struct:cJSON::cJSON
+num	include/cli.h	/^	int num;$/;"	m	struct:css
+offset	include/cli_def.h	/^    int offset;$/;"	m	struct:ud_t
+one_str	re2val.c	/^int one_str(char *chs)$/;"	f
+openfile	script/write_rpc.h.py	/^    openfile=open("include\/rpc_"+da+".h","wa")$/;"	v
+orderjson	readline.c	/^cJSON *orderjson;$/;"	v
+os	script/write_cli_rpc.c.py	/^import os $/;"	i
+os	script/write_json.py	/^import os $/;"	i
+os	script/write_rpc.h.py	/^import os $/;"	i
+os	script/write_web.py	/^import os$/;"	i
+parse_array	cJSON.c	/^static const char *parse_array(cJSON *item,const char *value)$/;"	f	file:
+parse_number	cJSON.c	/^static const char *parse_number(cJSON *item,const char *num)$/;"	f	file:
+parse_object	cJSON.c	/^static const char *parse_object(cJSON *item,const char *value)$/;"	f	file:
+parse_string	cJSON.c	/^static const char *parse_string(cJSON *item,const char *str)$/;"	f	file:
+parse_value	cJSON.c	/^static const char *parse_value(cJSON *item,const char *value)$/;"	f	file:
+pprint	script/write_web.py	/^from pprint import pprint$/;"	i
+pre	script/write_json.py	/^pre = 0$/;"	v
+prev	include/cJSON.h	/^	struct cJSON *next,*prev;	\/* next\/prev allow you to walk array\/object chains. Alternatively, use GetArraySize\/GetArrayItem\/GetObjectItem *\/$/;"	m	struct:cJSON	typeref:struct:cJSON::
+print_array	cJSON.c	/^static char *print_array(cJSON *item,int depth,int fmt)$/;"	f	file:
+print_big_module_help	readline.c	/^static void print_big_module_help(){$/;"	f	file:
+print_error_msg	readline.c	/^static void print_error_msg(char rl[],int num)$/;"	f	file:
+print_module_help	readline.c	/^static void print_module_help(char *mdname){$/;"	f	file:
+print_number	cJSON.c	/^static char *print_number(cJSON *item)$/;"	f	file:
+print_object	cJSON.c	/^static char *print_object(cJSON *item,int depth,int fmt)$/;"	f	file:
+print_other_help	readline.c	/^static void print_other_help(char **line_list,int len){$/;"	f	file:
+print_string	cJSON.c	/^static char *print_string(cJSON *item)	{return print_string_ptr(item->valuestring);}$/;"	f	file:
+print_string_ptr	cJSON.c	/^static char *print_string_ptr(const char *str)$/;"	f	file:
+print_value	cJSON.c	/^static char *print_value(cJSON *item,int depth,int fmt)$/;"	f	file:
+printfun	script/write_cli_rpc.c.py	/^def  printfun(funname):$/;"	f
+progname	main.c	/^static char *progname;$/;"	v	file:
+progname	readline.c	/^char *progname;$/;"	v
+protocol	include/cli_def.h	/^    int protocol;$/;"	m	struct:classentry_t
+pyjson	script/write_json.py	/^            pyjson = [] $/;"	v
+pyjson	script/write_json.py	/^      pyjson = [] $/;"	v
+pyjsons	script/write_json.py	/^      pyjsons = [] $/;"	v
+pyjsontree	script/write_json.py	/^            pyjsontree = {} $/;"	v
+pyjsontree	script/write_json.py	/^      pyjsontree = {} $/;"	v
+regex_back	readline.c	/^static int regex_back(cJSON  *cj, char *name,char *token)$/;"	f	file:
+reghelp	script/write_json.py	/^reghelp = {}$/;"	v
+res	script/write_json.py	/^res = {}$/;"	v
+rootjson	include/cli_def.h	/^cJSON *rootjson;$/;"	v
+rv	dispatcher.c	/^static int rv;$/;"	v	file:
+s_num	readline.c	/^static int s_num,dci;$/;"	v	file:
+scan	re2val.c	/^void scan(char *key, char *val){$/;"	f
+scanner	re2val.c	/^Scanner scanner;$/;"	v
+setalarm	main.c	/^void setalarm(int n, int signal_type)$/;"	f
+sig_type	main.c	/^int sig_type = 0;$/;"	v
+sip	include/cli_def.h	/^    unsigned int sip;$/;"	m	struct:classentry_t
+sip_mask	include/cli_def.h	/^    unsigned int sip_mask;    $/;"	m	struct:classentry_t
+skip	cJSON.c	/^static const char *skip(const char *in) {while (in && *in && (unsigned char)*in<=32) in++; return in;}$/;"	f	file:
+sport_mask	include/cli_def.h	/^    unsigned short sport_mask;$/;"	m	struct:classentry_t
+sptr	include/cli_def.h	/^		char *sptr;$/;"	m	struct:Scanner
+stage2_tag	include/cli_def.h	/^    int stage2_tag;$/;"	m	struct:classentry_t
+start_cli	readline.c	/^int start_cli (char *cmd, FILE *fp)$/;"	f
+start_readline	readline.c	/^static void start_readline()$/;"	f	file:
+stat	script/write_cli_rpc.c.py	/^import stat $/;"	i
+stat	script/write_json.py	/^import stat $/;"	i
+stat	script/write_rpc.h.py	/^import stat $/;"	i
+stream	script/write_web.py	/^stream = file(configFile, 'r')   $/;"	v
+string	include/cJSON.h	/^	char *string;				\/* The item's name string, if this item is the child of, or is in the list of subitems of an object. *\/$/;"	m	struct:cJSON
+string	script/write_cli_rpc.c.py	/^import string $/;"	i
+string	script/write_json.py	/^import string $/;"	i
+string	script/write_rpc.h.py	/^import string $/;"	i
+string	script/write_web.py	/^import string$/;"	i
+stripwhite	readline.c	/^char *stripwhite (string)$/;"	f
+suffix_object	cJSON.c	/^static void suffix_object(cJSON *prev,cJSON *item) {prev->next=item;item->prev=prev;}$/;"	f	file:
+sun	script/write_json.py	/^sun = {}$/;"	v
+sys	script/write_cli_rpc.c.py	/^import sys $/;"	i
+sys	script/write_json.py	/^import sys $/;"	i
+sys	script/write_rpc.h.py	/^import sys $/;"	i
+sys	script/write_web.py	/^import sys$/;"	i
+tab_init	readline.c	/^static void tab_init(char *text){$/;"	f	file:
+tcp_flag	include/cli_def.h	/^    unsigned char tcp_flag;$/;"	m	struct:classentry_t
+test	check.c	/^static void test(cJSON *json){$/;"	f	file:
+thismap	readline.c	/^cJSON *thismap;$/;"	v
+tl	readline.c	/^int tl = 0;$/;"	v
+token	include/cli_def.h	/^		int token;$/;"	m	struct:Scanner
+tokenlist	readline.c	/^char tokenlist[TAB_TOKEN_LEN][TAB_TOKEN_LEN];$/;"	v
+tokenlist	script/write_web.py	/^tokenlist = []$/;"	v
+tokenlist	script/write_web.py	/^tokenlist = list(set(tokenlist))$/;"	v
+tokenlistjson	script/write_web.py	/^tokenlistjson =  json.dumps(tokenlist,indent=4)$/;"	v
+tp	main.c	/^struct termios tp;$/;"	v	typeref:struct:termios
+type	include/cJSON.h	/^	int type;					\/* The type of the item, as above. *\/$/;"	m	struct:cJSON
+ud_mask	include/cli_def.h	/^    unsigned int ud_mask;$/;"	m	struct:classentry_t
+ud_t	include/cli_def.h	/^struct ud_t {$/;"	s
+uds	include/cli_def.h	/^    struct ud_t uds[(MAX_UD_ID + 1)\/2];$/;"	m	struct:classentry_t	typeref:struct:classentry_t::ud_t
+valuedouble	include/cJSON.h	/^	double valuedouble;			\/* The item's number, if type==cJSON_Number *\/$/;"	m	struct:cJSON
+valueint	include/cJSON.h	/^	int valueint;				\/* The item's number, if type==cJSON_Number *\/$/;"	m	struct:cJSON
+valuestring	include/cJSON.h	/^	char *valuestring;			\/* The item's string, if type==cJSON_String *\/$/;"	m	struct:cJSON
+vptr	include/cli_def.h	/^		void *vptr;$/;"	m	struct:Scanner
+wp	script/write_cli_rpc.c.py	/^wp = open("cli_rpc.c","w")$/;"	v
+wp	script/write_cli_rpc.c.py	/^wp = open("dispatcher.c","w")$/;"	v
+yaml	script/write_cli_rpc.c.py	/^import yaml$/;"	i
+yaml	script/write_json.py	/^import yaml$/;"	i
+yaml	script/write_rpc.h.py	/^import yaml$/;"	i
+yaml	script/write_web.py	/^import yaml$/;"	i
+yaml_str	script/write_cli_rpc.c.py	/^yaml_str = back_yaml_str("file\/root.yaml")$/;"	v
+yaml_str	script/write_json.py	/^  yaml_str = back_yaml_str("file\/root.yaml")$/;"	v
+yaml_str	script/write_rpc.h.py	/^yaml_str = back_yaml_str("file\/root.yaml")$/;"	v
