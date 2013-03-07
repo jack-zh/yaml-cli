@@ -1,7 +1,7 @@
 EXECUTABLES : out   
 CFLAGS  = -g
 LDFLAGS = -g
-
+CC = clang
 .c.o:
 	$(CC) $(CFLAGS) -c $<
 
