@@ -41,43 +41,114 @@
             <section>
             <h1>Link-pub</h1>
 
-            <p>yaml-cli是一个练习GO语言的实验性项目，目的是做一个提供给极客的网站，让大家在上面轻易的找到自己想要的资源，有趣的事情。
-            暂时用revel web项目开发。做平易的页面，做牛逼的内容，做方便的交流平台。<a href="https://github.com/jack-zh/yaml-cli">https://github.com/jack-zh/yaml-cli</a></p>
-
-            <p>yaml-cli 是一个公开的项目，托管在github上面，大家都可以参与，关于以后的发展，还是要看项目的成熟程度，现在只是一个练习的阶段
-            <a href="https://github.com/jack-zh/yaml-cli">https://github.com/jack-zh/yaml-cli</a></p>
+            <p>yaml-cli是一个用yaml做配置命令行的命令行小工具，用yaml定义命令格式，用Python生成json逻辑，然后用C语言的解析json，利用readline接口做命令行，有比较准确的提示，错误提示等。还提供了一个web用的接口和简单的demo。<a href="https://github.com/jack-zh/yaml-cli">https://github.com/jack-zh/yaml-cli</a></p>
 
             <h1>Installation</h1>
 
             <p>To install:</p>
 
-<pre><code># 依赖包的安装，以及依赖问题
-### 安装revel
-    go get github.com/robfig/revel
-#### 生成revel可执行文件
-    go build -o $GOBIN/revel github.com/robfig/revel/cmd
-### 安装mongodb的driver Mgo 先安装依赖bzr
-    install bzr
-    go get labix.org/v2/mgo
-### 项目生成和运行
-    revel new yaml-cli
+<pre><code>make check   #对json生成文件进行检查，是否符合规范
+make json    #根据yaml配置，生成json
+make rpc     #根据配置，生成rpc接口函数
+make out     #生成最终的二进制可执行文件
+make clean   #清除.o文件盒可执行二进制文件
+make clear   #清除所有的生成文件
 </code></pre>
 
             <h1>Quick Start</h1>
 
-            <p>启动项目，在8888端口:</p>
+            <p>./out</p>
 
-
-<pre><code>revel run yaml-cli
+<pre><code>ALY->json-cli git:(master)$./out 
+CLI:  error show
+ error show
+ ^error
+this should be:
+debug   r       show    start   reboot  
+reset   restore save    httpd   exitshell
+set     add     
+CLI: login system
+system: 
+reboot
+reset
+restore
+save
+show
+httpd
+exitshell
+<cr>
+system: reboot
+call:cli_reboot_system
+{
+}system: 
+system: quit
+CLI: show 
+backup         board          configuration  failover       ruleset        stage2         system
+CLI: show board info 
+<cr>
+CLI: show board info 
+call:cli_show_board_info
+{
+}CLI: 
+CLI: 
 </code></pre>
+<h1>Information</h1>
 
+            <p>1：一个yaml文件代表一个模块，登陆一个模块用：login model——name</p>
+            <p>2：命令的提示用TAB键，关键字用TAB可以提示，？（英文）代表完全下一步查看，<cr>是命令尾，代表可以回车结束</p>
+            <p>3：quit退出当前模块</p>
+<h1>配置文件说明</h1>
+<pre><code>--author Jack.ZH
+--title A Yaml CLI
+--date today
+JSON CLI README
+
+--newpage agenda
+--heading Yaml-root
+--beginoutput
+#include test1.yaml
+#include test2.yaml
+--endoutput
+test1 and test2 is the diff module
+
+--newpage intro
+--heading Yaml-one cmd
+test1cmds:
+--beginoutput
+- cmd: show system info        #cmd
+help: show some system message #help 
+web: yes                       #is in the web
+file: yes                      # cli -f  yes
+debug: no                      #debug no
+--endoutput
+
+--newpage intro
+--heading Yaml-CMD
+this:
+--beginoutput
+- cmd: add ruleset    
+     {mm,nn,qq ,thover} [isover]  over     
+--endoutput
+exp:
+add rukeset abc rr 234 cc=bca nn mm qq 0xa12 isover over 
+show:
+<> one or more ,N choose one:e:   
+[] kesuan e:[isover] 
+{} shunxu"," e:{mm,nn,qq ,thover}
+
+--newpage intro
+--heading in cmd
+Login :e:login system
+Quiet:CLI ALL 
+List:yaml文件
+Help:模块提示
+?:完全提示
+</code></pre>
 </section>
 </div>
 <footer>
 <p>Project maintained by <a href="https://github.com/jack-zh">jack.zh</a></p>
 </footer>
-</div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-
 </body>
 </html>
