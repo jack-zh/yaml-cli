@@ -6,8 +6,8 @@ JSON CLI README
 --newpage agenda
 --heading Yaml-root
 --beginoutput
-\#include test1.yaml
-\#include test2.yaml
+#include test1.yaml
+#include test2.yaml
 --endoutput
 test1 and test2 is the diff module
 
