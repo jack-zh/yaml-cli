@@ -15,7 +15,7 @@ rpc: script/write_cli_rpc.c.py
 	python script/write_cli_rpc.c.py 
 
 out: main.o readline.o cli_rpc.o cJSON.o re2val.o dispatcher.o 
-	$(CC) $(LDFLAGS) -o $@ main.o readline.o cJSON.o re2val.o cli_rpc.o dispatcher.o  -lm  -lreadline  # -lncurses 
+	$(CC) $(LDFLAGS) -o $@ main.o readline.o cJSON.o re2val.o cli_rpc.o dispatcher.o  -lm  -lreadline  -lncurses 
 
 check: check.o cJSON.o
 	$(CC) $(LDFLAGS) -o $@ check.o  cJSON.o -lm
