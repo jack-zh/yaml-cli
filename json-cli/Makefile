@@ -26,4 +26,4 @@ clean:
 
 clear:
 	$(RM) *.o
-	$(RM) out include/rpc*.h cli_rpc.c file/json
+	$(RM) out include/rpc*.h cli_rpc.c file/json dispatcher.c
