@@ -5,17 +5,17 @@
 #define PROMPT2(prompt, format)     "     %-40s" format, prompt
 
 
-#define MAX_UD_ID			15
+#define MAX_UD_ID            15
 
 
-#define CMD_L 32	
-#define LINE_MAX_TOKEN 32	
-#define ONE_COM_MAX_LEN 32*64	
-#define TAB_V 	1
-#define DOIT 	2
-#define TAB_TOKEN_LEN 	100
-#define REG_STR_LEN 	1024*8
-#define JSON_DIR 	    "file/json"
+#define CMD_L 32    
+#define LINE_MAX_TOKEN 32    
+#define ONE_COM_MAX_LEN 32*64    
+#define TAB_V     1
+#define DOIT     2
+#define TAB_TOKEN_LEN     100
+#define REG_STR_LEN     1024*8
+#define JSON_DIR         "file/json"
 
 
 #define SPTR  0x01
@@ -52,26 +52,26 @@ cJSON *help;
 cJSON *module;
 cJSON *mapjsonlist;
 typedef struct Scanner
-{	
-		char *sptr;
-		void *vptr;
-		int token;
-		unsigned long ival;
-		unsigned long ival1;
-		unsigned long ival2;
-		unsigned char css[32][8];     
-		unsigned int mac[6];     
-		unsigned int ipv6[8];
-		unsigned int mask;
-		/*
-		 *	sptr 	0x01
-		 *	vptr 	0x02
-		 *	ival 	0x04
-		 *	ival1	0x08
-		 *	css		0x10
-		 *	mac		0x20
-		 *	ipv6	0x40
-		 * */
+{    
+        char *sptr;
+        void *vptr;
+        int token;
+        unsigned long ival;
+        unsigned long ival1;
+        unsigned long ival2;
+        unsigned char css[32][8];     
+        unsigned int mac[6];     
+        unsigned int ipv6[8];
+        unsigned int mask;
+        /*
+         *    sptr     0x01
+         *    vptr     0x02
+         *    ival     0x04
+         *    ival1    0x08
+         *    css        0x10
+         *    mac        0x20
+         *    ipv6    0x40
+         * */
 }Scanner;
 
 struct ud_t {

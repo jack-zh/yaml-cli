@@ -134,7 +134,7 @@ static void fill_slot_port(char *portstr,int flag)
     //printf("\n");
     if(flag == 1)
         scanner.ival = ins >> 1;
-    if(flag == 2)	
+    if(flag == 2)    
         scanner.ival2 = ins >> 1;
 }
 
@@ -174,7 +174,7 @@ static void fill_smp(char *chs)
     sscanf(chs,"%*[^/]/%s",val0);
     sscanf(val0,"%[^/]",val2);
     sscanf(chs,"%*[^/]/%*[^/]/%s",val3);
-    fill_slot_port(val1,1);	
+    fill_slot_port(val1,1);    
     fill_slot_port(val3,2);
     if(strchr(val2,'r')){
         scanner.ival1 |= 1;
@@ -385,7 +385,7 @@ static void fill_interfaceclass_reg(char *chs)
     }
     ReplaceStr(portstr, "cx4", "28");
     }*/
-    scanner.ival = atoi(portstr);	
+    scanner.ival = atoi(portstr);    
 }
 
 
@@ -414,7 +414,7 @@ static void fill_ethertype_reg(char *chs)
 static void fill_ipversion_reg(char *chs)
 {
     int ipversion = 0;
-    if(strcmp(chs,"ipv4") == 0)	
+    if(strcmp(chs,"ipv4") == 0)    
         ipversion = 1;
     scanner.ival = ipversion;
     scanner.mask |= IVAL;
@@ -701,7 +701,7 @@ Scanner get_val(char *key,cJSON *dsp)
     else{
         scanner.token = -1;
     }
-    //	__print_scanner(scanner);
+    //    __print_scanner(scanner);
     return scanner;
 
 } 

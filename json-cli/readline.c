@@ -190,9 +190,9 @@ static void print_other_help(char **line_list,int len){
         }
         if(flag >= (len-1)){
             string = cJSON_GetObjectItem(cJSON_GetArrayItem(help,k),"res")->valuestring;
-            printf("\t%s\n",string);		
+            printf("\t%s\n",string);        
             string = cJSON_GetObjectItem(cJSON_GetArrayItem(help,k),"res")->valuestring;
-            printf("\t\thelp->:%s\n",string);		
+            printf("\t\thelp->:%s\n",string);        
         }
     }
 
@@ -285,7 +285,7 @@ static int doit(char *s)
                 //IS_END = 1;
                 MAP_IS_END = 1;
                 IN_MAP = 0;
-                fmt=cJSON_CreateObject();	
+                fmt=cJSON_CreateObject();    
                 onecom = cJSON_GetObjectItem(cJSON_GetArrayItem(json,j),"cmd");
                 mapjson = (cJSON *)NULL;
                 orderjson = onecom;
@@ -332,7 +332,7 @@ static int doit(char *s)
                                     {
                                         strcjson = cJSON_GetObjectItem(order,"name");
                                         string = strcjson->valuestring;
-                                        this_map = 	cJSON_GetObjectItem(mapjsonlist,string);
+                                        this_map =     cJSON_GetObjectItem(mapjsonlist,string);
                                         while(this_map && this_map->type != cJSON_NULL){
                                             strcjson = cJSON_GetObjectItem(this_map,"name");
                                             string = strcjson->valuestring;
@@ -651,7 +651,7 @@ static int check_json(char *token ,int level,cJSON *fmt)
 
 
 
-static int 	check_line(char **list,int len,cJSON *onejson){
+static int     check_line(char **list,int len,cJSON *onejson){
 
     int i=0;
     int is;
@@ -724,7 +724,7 @@ static void tab_init(char *text){
                     {
                         strcjson = cJSON_GetObjectItem(orderjson,"name");
                         string = strcjson->valuestring;
-                        this_map = 	cJSON_GetObjectItem(mapjsonlist,string);
+                        this_map =     cJSON_GetObjectItem(mapjsonlist,string);
                         while(this_map && this_map->type != cJSON_NULL){
                             strcjson = cJSON_GetObjectItem(this_map,"name");
                             string = strcjson->valuestring;
