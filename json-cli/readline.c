@@ -805,7 +805,7 @@ initialize_readline ()
     rl_add_defun ("?",list_next_fun,'?');
     rl_readline_name = "JSON";
     rl_completion_entry_function = command_generator;
-    rl_attempted_completion_function = (CPPFunction *)fileman_completion;
+    rl_attempted_completion_function = (rl_hook_func_t *)fileman_completion;
 }
 
 
